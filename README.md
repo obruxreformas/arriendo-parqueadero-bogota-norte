@@ -1,9 +1,6 @@
 "use client";
 
-import Image from "next/image";
-
 export default function Home() {
-  // WhatsApp contacto Pedro
   const whatsappNumber = "573102668311";
   const whatsappMessage = encodeURIComponent(
     "Hola, quisiera información sobre el arriendo de parqueadero en la Calle 162 con Cra 54"
@@ -18,21 +15,21 @@ export default function Home() {
         </h1>
 
         <div className="flex flex-col md:flex-row gap-4 w-full justify-center">
-          <Image
+          <img
             alt="Parqueadero cerrado"
             src="/2025-04-04-02-37-33.jpg"
             className="rounded-xl shadow-lg"
             width={470}
             height={360}
-            priority
+            style={{ objectFit: 'cover' }}
           />
-          <Image
+          <img
             alt="Conjunto cerrado -- sirve para cualquier automóvil"
             src="/PARQUEADERO-ALQUILER-COLINA-CAMPESTRE-MAZUREN-BRISS-DE-SOTAVENTO-AUTONORTE.jpg"
             className="rounded-xl shadow-lg"
             width={470}
             height={360}
-            priority
+            style={{ objectFit: 'cover' }}
           />
         </div>
 
