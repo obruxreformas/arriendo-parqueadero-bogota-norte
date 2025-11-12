@@ -1,12 +1,6 @@
-# arriendo-parqueadero-bogota-norte 
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-
-// Cambia la ruta e importación según la ubicación real de tus imágenes en /public:
-import parking1 from "/public/2025-04-04-02-37-33.jpg";
-import parking2 from "/public/PARQUEADERO-ALQUILER-COLINA-CAMPESTRE-MAZUREN-BRISS-DE-SOTAVENTO-AUTONORTE.jpg";
 
 export default function Home() {
   // WhatsApp contacto Pedro
@@ -26,18 +20,16 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-4 w-full justify-center">
           <Image
             alt="Parqueadero cerrado"
-            src={parking1}
+            src="/2025-04-04-02-37-33.jpg"
             className="rounded-xl shadow-lg"
-            style={{ objectFit: "cover" }}
             width={470}
             height={360}
             priority
           />
           <Image
             alt="Conjunto cerrado -- sirve para cualquier automóvil"
-            src={parking2}
+            src="/PARQUEADERO-ALQUILER-COLINA-CAMPESTRE-MAZUREN-BRISS-DE-SOTAVENTO-AUTONORTE.jpg"
             className="rounded-xl shadow-lg"
-            style={{ objectFit: "cover" }}
             width={470}
             height={360}
             priority
@@ -45,7 +37,7 @@ export default function Home() {
         </div>
 
         <h2 className="mt-6 text-xl md:text-2xl text-center font-semibold">
-          DISPONIBLE - ARRIENDO PARQUEDERO MAZUREN – CANTALEJO – ALEJANDRÍA - – GILMAR – DE MUY FACIL PARQUEO en la Calle 162 con Cra 54 para cualquier tipo de automóvil AL LADO DEL CARMEL CLUB -  En conjunto cerrado residencial con seguridad las 24 horas.
+          DISPONIBLE - ARRIENDO PARQUEDERO MAZUREN – CANTALEJO – ALEJANDRÍA – GILMAR – DE MUY FACIL PARQUEO en la Calle 162 con Cra 54 para cualquier tipo de automóvil AL LADO DEL CARMEL CLUB - En conjunto cerrado residencial con seguridad las 24 horas.
           <br /><br />
           WhatsApp Pedro +57 310 266 83 11 o Llamar SONIA 313 479 81 50
         </h2>
